@@ -1,0 +1,17 @@
+<div>
+    <h2>Verificador de Palíndromos</h2>
+    <p>Crear una aplicación en angular que reciba a través de un 
+        input de texto un número o palabra y mostrar en la pantalla 
+        si lo ingresado es capicúa o no.</p>
+    <h3>Ingresa una palabra:</h3>
+
+    <input id="dataInput" type="text" [(ngModel)]="data" (input)="checkCapicua()">
+
+    @if(isCapicua){
+        <p>La palabra {{data}} ----- ES una palabra isCapicua</p>
+    }@else{
+        <p>La palabra {{data}} ------ NO una palabra isCapicua</p>
+    }
+    
+  </div>
+  
